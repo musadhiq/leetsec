@@ -4,4 +4,30 @@
 .page-banner.home-banner {
   margin-top: 70px;
   padding-top: 30px;
+  background-color: transparent;
+}
+.header {
+  background-color: rgb(26, 26, 87);
+  border-bottom-left-radius: 50% 100px !important;
+  border-bottom-right-radius: 50% 100px !important;
+}
+.navbar-float {
+  background-color: rgb(26, 26, 87);
+}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-brand,
+.home-btn,
+.white,
+.btn-outline {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link,
+.text-brand {
+  color: rgba(255, 255, 255, 0.685);
+}
+.btn-outline {
+  border-color: rgba(255, 255, 255, 0.685);
 }
