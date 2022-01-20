@@ -31,3 +31,13 @@
 .btn-outline {
   border-color: rgba(255, 255, 255, 0.685);
 }
+
+@media (max-width: 528px) {
+  .header {
+    border-bottom-left-radius: 40% 50px !important;
+    border-bottom-right-radius: 40% 50px !important;
+  }
+  .home-img {
+    display: none;
+  }
+}

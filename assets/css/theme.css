@@ -1214,7 +1214,6 @@ a.text-dark:focus {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   font-weight: 500;
-  color: #6c55f9;
 }
 
 @media (min-width: 576px) {
