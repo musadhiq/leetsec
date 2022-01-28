@@ -8,7 +8,9 @@
  */
 
 :root {
-  --primary: #6c55f9;
+  --primary: #1b2223;
+  --text: #f4fefd;
+  --text-dark: #1b2223;
   --accent: #ff3d85;
   --secondary: #645f88;
   --success: #35bb78;
@@ -25,7 +27,8 @@
 body {
   font-family: "Work Sans", sans-serif;
   line-height: 1.5;
-  color: #2d2b3a;
+  color: var(--text);
+  background: var(--primary);
 }
 
 a {
@@ -133,9 +136,11 @@ a.bg-grey:focus {
 }
 
 .bg-light {
-  background-color: #f6f5fc !important;
+  background-color: var(--light) !important;
 }
-
+.page-section .p-dark {
+  color: var(--text-dark) !important;
+}
 a.bg-light:hover,
 a.bg-light:focus {
   background-color: #edecf5 !important;
@@ -1468,12 +1473,12 @@ a.text-dark:focus {
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #fff;
+  background-color: var(--primary);
   overflow: hidden;
 }
 
 .page-section p {
-  color: #898798;
+  color: var(--text);
 }
 
 .page-banner {
@@ -1569,7 +1574,7 @@ a.text-dark:focus {
 
 .title-section {
   max-width: 450px;
-  color: #2d2b3a;
+  color: var(--text);
   font-weight: 600;
 }
 

@@ -1,3 +1,7 @@
+:root {
+  --primary: #1b2223;
+}
+
 .navbar {
   top: 0px;
 }
