@@ -20,6 +20,7 @@
   --grey: #b4b2c5;
   --dark: #2d2b3a;
   --light: #f6f5fc;
+  --header: rgb(87, 232, 165);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
@@ -1142,7 +1143,16 @@ a.text-dark:focus {
 .breadcrumb-dark .breadcrumb-item.active {
   color: rgba(255, 255, 255, 0.8);
 }
-
+.header,
+.navbar-float {
+  background-color: var(--header);
+  background: linear-gradient(
+    264deg,
+    rgba(87, 232, 165, 1) 31%,
+    rgba(67, 212, 178, 1) 100%
+  );
+  color: var(--text-dark) !important;
+}
 .navbar {
   min-height: 70px;
   z-index: 1000;
@@ -1153,7 +1163,7 @@ a.text-dark:focus {
   top: 20px;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
   box-shadow: 0 2px 6px rgba(100, 95, 136, 0.15);
   z-index: 1070;
 }
@@ -1190,7 +1200,10 @@ a.text-dark:focus {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--text) !important;
+}
 .navbar-nav {
   margin-top: 10px;
   border-top: 1px solid #e4e7ee;
@@ -1499,7 +1512,7 @@ a.text-dark:focus {
 }
 
 .page-banner.home-banner h1 {
-  color: white;
+  color: var(--text-dark);
 }
 
 .page-banner.home-banner .img-place {
