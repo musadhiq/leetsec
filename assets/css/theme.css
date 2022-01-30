@@ -20,7 +20,7 @@
   --grey: #b4b2c5;
   --dark: #2d2b3a;
   --light: #f6f5fc;
-  --header: rgb(87, 232, 165);
+  --header: #645f88;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
@@ -83,7 +83,7 @@ a.bg-accent:focus {
 }
 
 .bg-secondary {
-  background-color: #645f88 !important;
+  background-color: var(--secondary) !important;
 }
 
 a.bg-secondary:hover,
@@ -175,7 +175,7 @@ a.text-accent:focus {
 }
 
 .text-secondary {
-  color: #645f88 !important;
+  color: var(--secondary) !important;
 }
 
 a.text-secondary:hover,
@@ -753,8 +753,8 @@ a.text-dark:focus {
 }
 
 .btn-outline {
-  border-color: #d7d5e9;
-  color: #645f88;
+  border-color: var(--grey);
+  color: var(--light);
 }
 
 .btn-outline:hover {
@@ -1145,12 +1145,12 @@ a.text-dark:focus {
 }
 .header,
 .navbar-float {
-  background-color: var(--header);
-  background: linear-gradient(
+  /* background-color: var(--header); */
+  /* background: linear-gradient(
     264deg,
     rgba(87, 232, 165, 1) 31%,
     rgba(67, 212, 178, 1) 100%
-  );
+  ); */
   color: var(--text-dark) !important;
 }
 .navbar {
@@ -1163,7 +1163,7 @@ a.text-dark:focus {
   top: 20px;
   left: 0;
   width: 100%;
-  /* background-color: #fff; */
+  background-color: var(--text-dark);
   box-shadow: 0 2px 6px rgba(100, 95, 136, 0.15);
   z-index: 1070;
 }
@@ -1202,7 +1202,7 @@ a.text-dark:focus {
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: var(--text) !important;
+  color: var(--light) !important;
 }
 .navbar-nav {
   margin-top: 10px;
@@ -1219,19 +1219,20 @@ a.text-dark:focus {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(100, 95, 136, 0.75);
+  color: var(--light);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
-  color: #645f88;
+  color: var(--success);
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--light);
 }
 
 @media (min-width: 576px) {
@@ -1500,7 +1501,7 @@ a.text-dark:focus {
   margin-bottom: 16px;
   height: 320px;
   background-color: #f6f5fc;
-  color: #645f88;
+  color: var(--light);
   border-radius: 30px;
 }
 
@@ -1512,7 +1513,8 @@ a.text-dark:focus {
 }
 
 .page-banner.home-banner h1 {
-  color: var(--text-dark);
+  color: var(--light);
+  font-weight: bold;
 }
 
 .page-banner.home-banner .img-place {
@@ -1591,12 +1593,12 @@ a.text-dark:focus {
   font-weight: 600;
 }
 
-.title-section .marked {
+.marked {
   position: relative;
   color: #6c55f9;
 }
 
-.title-section .marked::before {
+.marked::before {
   content: "";
   position: absolute;
   bottom: 4px;
